@@ -9,11 +9,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var movieOutlet: [UIButton]!
+    @IBOutlet weak var backPoster: UIImageView!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        designPreviewButton()
     }
-
-
+    
+    func designPreviewButton(){
+        for item in movieOutlet{
+            item.layer.cornerRadius = 50
+            item.clipsToBounds = true
+            item.layer.borderWidth = 1
+        }
+    }
+    
+    
+    @IBAction func imageRandomClicked(_ sender: UIButton) {
+        backPoster.image = UIImage(named: "movie\(Int.random(in: 0...3))")
+    }
 }
 
