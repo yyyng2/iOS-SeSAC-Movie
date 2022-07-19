@@ -20,58 +20,33 @@ class SignUpViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        designTextField(emailTextField, textFieldPlaceholder: "이메일 주소 또는 전화번호", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
-        designTextField(passwordTextField, textFieldPlaceholder: "비밀번호", textFieldKeyboardType: .emailAddress, textFieldSecure: true)
-        designTextField(nameTextField, textFieldPlaceholder: "닉네임", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
-        designTextField(cityTextField, textFieldPlaceholder: "위치", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
-        designTextField(codeTextField, textFieldPlaceholder: "추천 코드 입력", textFieldKeyboardType: .numberPad, textFieldSecure: false)
-        
+                
+        designNewflixLabel()
         designSignButton()
         designSwitch()
+        designTextField()
         
+    }
+    
+    func designTextField(){
+        emailTextField.designTextField(textFieldPlaceholder: "이메일 주소 또는 전화번호", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
+        passwordTextField.designTextField(textFieldPlaceholder: "비밀번호", textFieldKeyboardType: .emailAddress, textFieldSecure: true)
+        nameTextField.designTextField(textFieldPlaceholder: "닉네임", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
+        cityTextField.designTextField(textFieldPlaceholder: "위치", textFieldKeyboardType: .emailAddress, textFieldSecure: false)
+        codeTextField.designTextField(textFieldPlaceholder: "추천 코드 입력", textFieldKeyboardType: .numberPad, textFieldSecure: false)
     }
     
     func designNewflixLabel(){
-        newflixLabel.text = "NEWFLIX"
-        newflixLabel.textColor = .red
-        newflixLabel.textAlignment = .center
-        newflixLabel.frame.size = newflixLabel.intrinsicContentSize
+        newflixLabel.designNewflixLabel()
     }
     
     func designSignButton(){
-        signButton.setTitle("회원가입", for: .normal)
-        signButton.setTitleColor(UIColor.black, for: .normal)
-        signButton.backgroundColor = UIColor.white
-        signButton.layer.cornerRadius = 8
+        signButton.designSignButton()
     }
     
     func designSwitch(){
-        infoSwitch.setOn(true, animated: true)
-        infoSwitch.onTintColor = UIColor.red
-        infoSwitch.thumbTintColor = .white
+        infoSwitch.designSwitch()
     }
-    
-    func designTextField(_ textFieldName: UITextField, textFieldPlaceholder: String, textFieldKeyboardType: UIKeyboardType, textFieldSecure: Bool){
-        textFieldName.attributedPlaceholder = NSAttributedString(string: textFieldPlaceholder, attributes: [.foregroundColor: UIColor.white])
-        textFieldName.keyboardType = textFieldKeyboardType
-        textFieldName.backgroundColor = .darkGray
-        textFieldName.layer.cornerRadius = 8
-        textFieldName.textAlignment = .center
-        textFieldName.borderStyle = .roundedRect
-        textFieldName.isSecureTextEntry = textFieldSecure
-
-    }
-    
-    func Alert(title: String, message: String){
-        let alert = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.alert)
-        let cancel = UIAlertAction(title: "cancel", style: UIAlertAction.Style.cancel)
-        alert.addAction(cancel)
-        
-        self.present(alert, animated: false)
-    }
-    
-    
     
     @IBAction func signButtonClicked(_ sender: UIButton) {
         view.endEditing(true)

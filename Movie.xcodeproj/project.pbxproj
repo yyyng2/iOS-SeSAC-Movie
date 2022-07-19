@@ -10,6 +10,11 @@
 		1816C0A32873D887003F597B /* SwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816C0A22873D887003F597B /* SwiftViewController.swift */; };
 		1816C0A52873DAAA003F597B /* CocoaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816C0A42873DAAA003F597B /* CocoaViewController.swift */; };
 		1816C0C728759874003F597B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1816C0C628759874003F597B /* SignUpViewController.swift */; };
+		189821732886DC6800A887BD /* UITextField+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189821722886DC6800A887BD /* UITextField+Extension.swift */; };
+		189821752886E21900A887BD /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189821742886E21900A887BD /* UIViewController+Extension.swift */; };
+		189821772886E66400A887BD /* UILabel+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189821762886E66400A887BD /* UILabel+Extension.swift */; };
+		189821792886E6D300A887BD /* UISwitch+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189821782886E6D300A887BD /* UISwitch+Extension.swift */; };
+		1898217B2886E71900A887BD /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1898217A2886E71900A887BD /* UIButton+Extension.swift */; };
 		18AE68F42872766900281425 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE68F32872766900281425 /* AppDelegate.swift */; };
 		18AE68F62872766900281425 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE68F52872766900281425 /* SceneDelegate.swift */; };
 		18AE68F82872766900281425 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18AE68F72872766900281425 /* ViewController.swift */; };
@@ -22,6 +27,11 @@
 		1816C0A22873D887003F597B /* SwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftViewController.swift; sourceTree = "<group>"; };
 		1816C0A42873DAAA003F597B /* CocoaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CocoaViewController.swift; sourceTree = "<group>"; };
 		1816C0C628759874003F597B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		189821722886DC6800A887BD /* UITextField+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extension.swift"; sourceTree = "<group>"; };
+		189821742886E21900A887BD /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		189821762886E66400A887BD /* UILabel+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Extension.swift"; sourceTree = "<group>"; };
+		189821782886E6D300A887BD /* UISwitch+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UISwitch+Extension.swift"; sourceTree = "<group>"; };
+		1898217A2886E71900A887BD /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		18AE68F02872766900281425 /* Movie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Movie.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18AE68F32872766900281425 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18AE68F52872766900281425 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -67,6 +77,11 @@
 				18AE68F72872766900281425 /* ViewController.swift */,
 				18AE68F92872766900281425 /* Main.storyboard */,
 				1816C0C628759874003F597B /* SignUpViewController.swift */,
+				1898217A2886E71900A887BD /* UIButton+Extension.swift */,
+				189821782886E6D300A887BD /* UISwitch+Extension.swift */,
+				189821762886E66400A887BD /* UILabel+Extension.swift */,
+				189821742886E21900A887BD /* UIViewController+Extension.swift */,
+				189821722886DC6800A887BD /* UITextField+Extension.swift */,
 				1816C0A42873DAAA003F597B /* CocoaViewController.swift */,
 				1816C0A22873D887003F597B /* SwiftViewController.swift */,
 				18AE68FC2872767100281425 /* Assets.xcassets */,
@@ -147,12 +162,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				189821752886E21900A887BD /* UIViewController+Extension.swift in Sources */,
+				189821792886E6D300A887BD /* UISwitch+Extension.swift in Sources */,
 				1816C0C728759874003F597B /* SignUpViewController.swift in Sources */,
+				1898217B2886E71900A887BD /* UIButton+Extension.swift in Sources */,
 				18AE68F82872766900281425 /* ViewController.swift in Sources */,
+				189821732886DC6800A887BD /* UITextField+Extension.swift in Sources */,
 				18AE68F42872766900281425 /* AppDelegate.swift in Sources */,
 				18AE68F62872766900281425 /* SceneDelegate.swift in Sources */,
 				1816C0A52873DAAA003F597B /* CocoaViewController.swift in Sources */,
 				1816C0A32873D887003F597B /* SwiftViewController.swift in Sources */,
+				189821772886E66400A887BD /* UILabel+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
